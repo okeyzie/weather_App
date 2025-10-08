@@ -12,7 +12,7 @@ const weatherSchema = new mongoose.Schema({
   temperature: {
     type: String,
   },
-  description: {
+  condition: {
     type: String,
   },
   humidity: {

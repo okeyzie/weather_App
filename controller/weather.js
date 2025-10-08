@@ -22,7 +22,7 @@ exports.getWeather = async (req, res) => {
       city: data.name,
       country: data.sys.country,
       temperature: `${data.main.temp} °C`,
-      description: data.weather[0].description,
+      condition: data.weather[0].description,
       humidity: `${data.main.humidity}%`,
       wind: `${data.wind.speed} m/s`,
     });
