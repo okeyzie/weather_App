@@ -1,4 +1,3 @@
-// controllers/weatherController.js
 const axios = require("axios");
 const Weather = require("../model/weather");
 require("dotenv").config();
@@ -35,7 +34,7 @@ exports.getWeather = async (req, res) => {
     });
   } catch (error) {
     return res.status(404).json({ 
-        message: "City not found or invalid request." + error.message
+        message: "City not found" + error.message
     });
   }
 };
